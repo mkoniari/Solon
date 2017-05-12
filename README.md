@@ -1,6 +1,6 @@
 # Introducing Solon: Modelling, Managing and Mining Legal Sources
 
-This page is a companion for the paper on [Introducing Solon: Modelling, Managing and Mining Legal Sources], written by Koniaris Marios (me), George Papastefanatos, Marios Meimarids and Giorgos Alexiou. This page hosts additional info, as to encourage progress on legal document management systems and  to improve access to legal sources.
+This page is a companion for the paper on [Introducing Solon: Modelling, Managing and Mining Legal Sources], written by Koniaris Marios (me), George Papastefanatos, Marios Meimaris and Giorgos Alexiou. This page hosts additional info, as to encourage progress on legal document management systems and  to improve access to legal sources.
 
 ## Intro
 Solon main goal is to assist users locate and retrieve legal and regulatory documents within the exact context of a conceptual reference. It consists of several different components, exposed as REST services. We consider Solon as an advanced legal document management platform, operating on legal sources that are automatically discovered and collected from portals by means of Web Crawlers/Harvesters on a scheduled basis, automatically extracting a machine readable semantic representation of legislation, interlinking them based on discovered references and classifying them  according to a set of rules, offering, among others fine-grained search results and  enabling users to organize legal information according to individual needs.
