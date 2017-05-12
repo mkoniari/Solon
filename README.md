@@ -1,27 +1,23 @@
 # Towards Automatic Structuring and Semantic Indexing of Legal Documents
 
-This page is a companion for the [PCI 2016](http://pci2016.teiwest.gr/) paper on [Towards Automatic Structuring and Semantic Indexing of Legal  Documents](http://dx.doi.org/10.1145/3003733.3003801), written by Koniaris Marios (me), George Papastefanatos and Yannis Vassiliou. This page hosts additional info, as to encourage progress on the Automatic Structuring and Semantic Indexing of Legal Documents.
+This page is a companion for the paper on [Introducing Solon: Modelling, Managing and Mining Legal Sources], written by Koniaris Marios (me), George Papastefanatos, Marios Meimarids and Giorgos Alexiou. This page hosts additional info, as to encourage progress on legal document management systems and  to improve access to legal sources.
 
 ## Intro
-Legal documents are usually stored and offered to the end user in presentation oriented manifestation, making impossible for the end users to inquiry semantics about the documents, such as date of enactment, date of repeal, jurisdiction, etc. or to reuse information and establish an interconnection with similar repositories. We present an approach for extracting a machine readable semantic representation of legislation, from unstructured document formats. Our method exploits common formats of legal documents to identify blocks of structural and semantic information and models them according
-to a popular legal meta-schema, [Akoma Ntoso](http://www.akomantoso.org/)
+Solon main goal is to assist users locate and retrieve legal and regulatory documents within the exact context of a conceptual reference. It consists of several different components, exposed as REST services. We consider Solon as an advanced legal document management platform, operating on legal sources that are automatically discovered and collected from portals by means of Web Crawlers/Harvesters on a scheduled basis, automatically extracting a machine readable semantic representation of legislation, interlinking them based on discovered references and classifying them  according to a set of rules, offering, among others fine-grained search results and  enabling users to organize legal information according to individual needs.
 
-## Approach Overview
+## Solon in Depth
 
-Several guidelines/ principles of good legislative drafting, both at 
-National and E.U. level (e.g., [Joint Practical Guide for persons involved in the drafting of European Union legislation](https://www.google.gr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwju8M2P_NLPAhWGOxoKHT0DDC4QFgghMAA&url=http%3A%2F%2Feur-lex.europa.eu%2Fcontent%2Ftechleg%2FKB0213228ENN.pdf&usg=AFQjCNE5WLDhUqe7vv9A_DOSepx60yloZw)) have established common formats, which most legal documents abide by. In a simplified view, a legislative legal
-document has the following structure:
-* Introductory part
-* Text body
-* End part
+### General Characteristics
 
-A visual aid of the aforementioned structure for a law, where we manually annotated structural parts and metadata values is given in the following figure:
-![greek law structure](https://raw.githubusercontent.com/mkoniari/LawParser/master/figures/fig1.png "greek law structure")
+* Support for automatic and manual import of unstructured documents from predefined legal sources 
+* Automatic structural analysis and semantic representation of textual data and metadata
+* Automatic discovery and resolution of legal citations, following standards, for each respective structural unit.
+* Automatic classification of legal sources based on custom rules.
+* Support for manual curation of the automatically discovered, structured and semantically enriched content.
+* Support for multi criteria and multi faceted search using all metadata identified in documents
+* Support for structured content retrieval.
 
-Extraction and structuring of pdf files is done in three subsystems:
-* Extractor: Extracting text / images from the pdf.
-* Parser: Structural Text parsing and modeling 
-* Categorizer: Semantic analysis & linkage analysis.
+Solon is based on a set of software components integrated through well-defined APIs, that communicate through REST HTTP interfaces and can be utilized not only as parts of the overall architecture, but also as individual services.
 
 ### Extractor
 #### Text Extract
