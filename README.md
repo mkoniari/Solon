@@ -41,7 +41,9 @@ Solon is composed of different components exposed to the remaining platform as R
 
 #### Text Mining
 ##### Structuring Legal Documents
-....
+[LegalParser](https://github.com/mkoniari/LegalParser), provides for ...
+
+
 ##### Interlinking legal sources
 ....
 ##### Document Classification
