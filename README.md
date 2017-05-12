@@ -36,8 +36,20 @@ Solon is composed of different components exposed to the remaining platform as R
 
 
 #### Legal Document Repository
-Text is acquired either form pdf files or from an ocr program.
 
+#### Crawler/ harvester
+
+#### Text Mining
+##### Structuring Legal Documents
+....
+##### Interlinking legal sources
+....
+##### Document Classification
+....
+
+#### Collaborative semantic interlinking
+
+#### Search
 
 ## Samples
 
